@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="12dp"
+        >
+        <TextView 
+            android:id="@+id/setting_item_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="设置版本更新"
+            android:layout_centerVertical="true"
+            />
+        <ImageView 
+            android:id="@+id/setting_item_toggle_iv"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            
+            android:background="@drawable/off"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+        
+    </RelativeLayout>
+

@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommonNumberActivity" >
+
+    <TextView
+        style="@style/TitleBarStyle"
+        android:text="常用号码查询" />
+    <!--groupIndicator="@null" 组列表左边的图标 置为空  -->
+    <ExpandableListView 
+        android:id="@+id/tools_common_number_elstview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:groupIndicator="@null"
+        ></ExpandableListView>
+
+</RelativeLayout>

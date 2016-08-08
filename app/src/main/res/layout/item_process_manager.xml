@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    
+    android:background="@drawable/home_grid_item_select"
+    android:layout_height="wrap_content" >
+    <ImageView 
+        android:id="@+id/pm_item_icon_iv"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerVertical="true"
+        />
+    <!--ems:显示的宽度 ：10 10个汉字字符左右   -->
+    <TextView 
+        android:id="@+id/pm_item_name_tv"
+        style="@style/NormalTextStyle"
+        android:text="进程名"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/pm_item_icon_iv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:ems="10"
+        />
+    <TextView 
+        android:id="@+id/pm_memory_tv"
+        style="@style/NormalTextStyle"
+        android:layout_below="@id/pm_item_name_tv"
+        android:layout_alignLeft="@+id/pm_item_name_tv"
+        android:text="内存大小"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        />
+  <CheckBox 
+      android:id="@+id/pm_chb"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_marginRight="5dp"
+      android:clickable="false"
+      android:focusable="false"
+      android:layout_centerVertical="true"
+      />
+
+</RelativeLayout>

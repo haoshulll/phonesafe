@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itcast="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- 深度 、广度 --> 
+    <TextView 
+        style="@style/TitleBarStyle"
+        android:text="常用工具"
+        />
+    <!-- 默认要把开关的图片隐藏 -->
+    <com.myapp.phonesafe.view.SettingItemView
+        android:id="@+id/tools_number_address_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        itcast:itcast_title="号码归属地查询"
+        itcast:itcast_bg="first"
+        itcast:itcast_toggle_ennable="false"
+        />
+    <com.myapp.phonesafe.view.SettingItemView
+        android:id="@+id/tools_common_number_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itcast:itcast_title="常用号码查询"
+        itcast:itcast_bg="last"
+        itcast:itcast_toggle_ennable="false"
+        />
+
+    <com.myapp.phonesafe.view.SettingItemView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tools_applock_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itcast:itcast_title="软件锁管理"
+        itcast:itcast_bg="first"
+        itcast:itcast_toggle_ennable="false"
+        />
+    <com.myapp.phonesafe.view.SettingItemView
+        android:id="@+id/tools_watchdog_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itcast:itcast_title="开启电子狗服务"
+        itcast:itcast_bg="last"
+        />
+
+
+
+
+</LinearLayout>

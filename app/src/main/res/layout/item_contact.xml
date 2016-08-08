@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="15dp"
+    android:paddingBottom="12dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    
+    android:background="@drawable/home_grid_item_select"
+    android:layout_height="wrap_content" >
+    <ImageView 
+        android:id="@+id/contact_icon_iv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_contact"
+        />
+    <TextView 
+        android:id="@+id/contact_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="佚名"
+        android:layout_toRightOf="@+id/contact_icon_iv"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000"
+        android:layout_marginTop="3dp"
+        />
+    <TextView 
+        android:id="@+id/contact_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_name_tv"
+        android:layout_alignLeft="@+id/contact_name_tv"
+        android:text="110"
+        android:textSize="13sp"
+        android:singleLine="true"
+        android:textColor="#7000"
+        />
+    
+
+</RelativeLayout>

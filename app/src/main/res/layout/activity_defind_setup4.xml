@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/SetupTitleBarStyle"
+        android:text="4. 激活设备管理员" />
+
+    <TextView
+        style="@style/NormalTextStyle"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:text="激活设备管理员:\n 可以远程锁屏,远程擦除数据" />
+
+    <RelativeLayout 
+        android:id="@+id/setup_admin_rly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/perform_button_select"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        >
+        <TextView 
+            style="@style/NormalTextStyle"
+            android:text="点击激活/取消激活设备管理员"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="49dp"
+            android:layout_marginStart="49dp"
+            android:id="@+id/textView2" />
+        <ImageView 
+            android:id="@+id/setup_admin_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/admin_inactivated"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_marginLeft="27dp"
+            android:layout_marginStart="27dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/step_4" />
+
+        <Button
+            android:id="@+id/next"
+            style="@style/SetupNextBtnStyle"
+            android:text="下一步" />
+        <Button
+            android:id="@+id/pre"
+            style="@style/SetupPreBtnStyle"
+            android:text="上一步" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/presence_invisible"
+                />
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/presence_invisible"
+                />
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/presence_invisible"
+                />
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/presence_online"
+                />
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/presence_invisible"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

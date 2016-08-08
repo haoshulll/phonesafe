@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.BlackEditActivity" >
+
+    <include layout="@layout/layout_title_bar" />
+
+    <TextView
+        style="@style/NormalTextStyle"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:text="电话号码" />
+
+    <EditText
+        android:id="@+id/black_number_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="号码不能为空"
+        android:background="@drawable/black_edit_select"
+        android:inputType="phone" />
+
+    <RadioGroup
+        android:id="@+id/black_type_rg"
+        android:layout_width="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/black_type_call_rb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="电话" />
+
+        <RadioButton
+            android:id="@+id/black_type_sms_rb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="短信" />
+
+        <RadioButton
+            android:id="@+id/black_type_all_rb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="全部" />
+    </RadioGroup>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:layout_alignParentBottom="true"
+            >
+            <Button 
+                android:id="@+id/black_ok_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="保存"
+                android:padding="10dp"
+                android:background="@drawable/perform_button_select"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                />
+            <Button 
+                android:id="@+id/black_cancel_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textSize="20sp"
+                android:background="@drawable/cancel_button_select"
+                android:layout_marginRight="10dp"
+                />
+            
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

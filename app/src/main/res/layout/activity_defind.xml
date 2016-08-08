@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/TitleBarStyle"
+        android:text="手机防盗" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <TextView
+            style="@style/NormalTextStyle"
+            android:layout_centerVertical="true"
+            android:text="安全号码" />
+
+        <TextView
+            android:id="@+id/defind_number_tv"
+            style="@style/NormalTextStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="安全号码" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#44000000" />
+
+    <RelativeLayout
+        android:id="@+id/defind_state_rly"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <TextView
+            style="@style/NormalTextStyle"
+            android:layout_centerVertical="true"
+            android:text="防盗保护是否开启" />
+
+        <ImageView
+            android:id="@+id/defind_lock_iv"
+            style="@style/NormalTextStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lock" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#44000000" />
+
+    <RelativeLayout
+        android:id="@+id/defind_resetup_rly"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <TextView
+            style="@style/NormalTextStyle"
+            android:layout_centerVertical="true"
+            android:textColor="@drawable/text_color_select"
+            android:text="重新进入设置向导页面 " />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#88000000"
+        android:padding="8dp"
+        android:text="功能介绍"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        style="@style/SetupItemStyle"
+        android:text="GPS追踪:#*location*#" />
+
+    <TextView
+        style="@style/SetupItemStyle"
+        android:text="远程销毁数据:#*wipedata*#" />
+
+    <TextView
+        style="@style/SetupItemStyle"
+        android:text="播放报警音乐:#*alarm*#" />
+
+    <TextView
+        style="@style/SetupItemStyle"
+        android:text="远程锁屏:#*lockscreen*#" />
+
+</LinearLayout>

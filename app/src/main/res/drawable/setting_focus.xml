@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+     >
+     <!--
+       1. android:shape: 绘制的形状：
+        oval ：椭圆
+        line ：线
+        ring： 圆环
+        rectangle:矩形
+       2. corners:边角
+       3. solid:实体，实心
+       4. stroke :画空心，画边线
+       -->
+     <corners
+         android:radius="16dp"
+         ></corners>
+    <size 
+        android:width="32dp"
+        android:height="32dp"
+        />
+    <solid 
+        android:color="#6fff"
+        />
+    <stroke android:color="#6fff"
+        android:width="1dp"
+        />
+
+</shape>

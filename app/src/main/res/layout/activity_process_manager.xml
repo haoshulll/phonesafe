@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.ProcessManagerActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/TitleBarStyle"
+            android:text="进程管理" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:onClick="clearProcess"
+            android:scaleType="center"
+            android:src="@drawable/clean_select" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <!-- android:fastScrollAlwaysVisible="true" ：快速的滚动条显示 -->
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fastScrollAlwaysVisible="true" >
+        </ListView>
+
+        <include layout="@layout/layout_public_loadding" />
+        
+        
+         <TextView
+            android:id="@+id/pm_type_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d1d1d1"
+            android:padding="4dp"
+            android:text="用户进程XXX个"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+        <!-- 抽屉效果 -->
+
+        <SlidingDrawer
+            android:id="@+id/pm_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:content="@+id/pm_drawer_content"
+            android:handle="@+id/pm_drawer_handle" >
+
+            <!-- 抽屉的手柄 -->
+
+            <RelativeLayout
+                android:id="@+id/pm_drawer_handle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/drawer_bg" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/pm_drawer_arrow1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/drawer_arrow_up" />
+
+                    <ImageView
+                        android:id="@+id/pm_drawer_arrow2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/drawer_arrow_up" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/pm_drawer_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/NormalTextStyle"
+                    android:layout_margin="5dp"
+                    android:text="进程管理设置" />
+                <com.myapp.phonesafe.view.SettingItemView
+                    android:id="@+id/pm_showSystem_sv"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    app:itcast_title="显示系统进程"
+                    app:itcast_bg="first"
+                    />
+                <com.myapp.phonesafe.view.SettingItemView
+                    android:id="@+id/pm_lockScreenClean_sv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itcast_title="锁屏自定清理"
+                    app:itcast_bg="last"
+                    />
+            </LinearLayout>
+        </SlidingDrawer>
+
+       
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/cancel_button_select"
+            android:onClick="selectAll"
+            android:text="全选" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/cancel_button_select"
+            android:onClick="selectClear"
+            android:text="取消" />
+    </LinearLayout>
+
+</LinearLayout>

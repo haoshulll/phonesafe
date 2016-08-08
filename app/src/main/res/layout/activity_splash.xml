@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash"
+    tools:context="com.myapp.phonesafe.ui.activity.SplashActivity"
+     >
+    <!-- android:textStyle="bold"
+       文本样式：加粗
+     -->
+    <TextView
+        android:id="@+id/version_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="版本名"
+        android:textStyle="bold"
+        android:textColor="#cdad00"
+        android:textSize="22sp" />
+
+</RelativeLayout>

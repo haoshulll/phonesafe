@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+     xmlns:itcast="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/title_bar_tv"
+        android:text="设置中心"
+        style="@style/TitleBarStyle"
+        />
+    <!-- 引用布局 -->
+ <!--   <include layout="@layout/view_setting_item"/> -->
+   <com.myapp.phonesafe.view.SettingItemView
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       itcast:itcast_title="设置版本更新"
+       android:clickable="true"
+       android:id="@+id/update_sv"
+       itcast:itcast_bg="first"
+       >
+   </com.myapp.phonesafe.view.SettingItemView>
+   <com.myapp.phonesafe.view.SettingItemView
+       android:id="@+id/setting_black_intercepter_sv"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       itcast:itcast_title="设置拦截黑名单"
+       itcast:itcast_bg="last"
+       >
+   </com.myapp.phonesafe.view.SettingItemView>
+   <com.myapp.phonesafe.view.SettingItemView
+       android:id="@+id/setting_address_show_sv"
+       android:layout_marginTop="20dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       itcast:itcast_title="归属地显示设置"
+       itcast:itcast_bg="first"
+       />
+   <com.myapp.phonesafe.view.SettingItemView
+       android:id="@+id/setting_address_style_sv"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       itcast:itcast_title="归属地风格设置"
+       itcast:itcast_bg="last"
+       itcast:itcast_toggle_ennable="false"
+       />
+   
+</LinearLayout>

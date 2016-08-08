@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_bkg" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/home_logo_iv"
+                android:layout_width="240dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_itcast" />
+
+            <!--
+              1.  ellipsize: 省略策略
+              start：开始部分省略
+              middle：中间部分省略
+              end：尾部省略， 默认
+              marquee：滚动字幕效果，走马灯效果
+               2. focusable:能够获取焦点
+               3. focusableInTouchMode ：在触控模式中可以获取焦点
+               4: marqueeRepeatLimit =“marquee_forever” :滚动效果永远动起来
+            -->
+
+            <com.myapp.phonesafe.view.FocusTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="14dp"
+                android:text="360手机安全卫士,操作简单，功能强大，用心呵护您的手机，真诚为您服务"
+                android:textColor="#bbf4eb9d"
+
+                android:textSize="16sp" />
+
+            <!--            <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingLeft="10dp"
+                            android:text="传智播客安全卫士,操作简单，功能强大，用心呵护您的手机"
+                            android:textColor="#bf00"
+                            android:textSize="14sp"
+                            android:focusable="true"
+                            android:ellipsize="marquee"
+                            android:focusableInTouchMode="true"
+                            android:marqueeRepeatLimit="marquee_forever"
+                             /> -->
+            <!--           <cn.itcast.phonesafe.view.FocusTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingLeft="10dp"
+                            android:text="传智播客安全卫士,操作简单，功能强大，用心呵护您的手机"
+                            android:textColor="#bf00"
+                            android:textSize="14sp" /> -->
+        </LinearLayout>
+        <!-- scaleType ：前景图片的缩放类型：
+           fitXY： 适配控件的大小
+           center :前景图片原始大小，且放置在中间
+         -->
+        <ImageView
+            android:id="@+id/home_setting_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/home_setting_select"
+            android:scaleType="center"
+            android:onClick="setting"
+            android:src="@drawable/setting" />
+    </RelativeLayout>
+    <!--  GridView 与ListView非常相似，都是AdapterView的子类
+
+    numColumns:列数
+    horizontalSpacing :网格间的水平间隔
+    verticalSpacing :网格间的垂直间隔
+
+     -->
+    <GridView
+        android:id="@+id/home_gv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:numColumns="2"
+        android:horizontalSpacing="3dp"
+        android:verticalSpacing="1dp"
+        >
+
+    </GridView>
+
+</LinearLayout>

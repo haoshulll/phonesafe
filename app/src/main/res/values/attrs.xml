@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 自定义属性的名称尽量不要与父控件定义的属性相同 -->
+    <declare-styleable name="SettingItemView">
+        <attr name="itcast_title" format="string" />
+        <attr name="itcast_bg">
+            <enum name="first" value="0" />
+            <enum name="middle" value="1" />
+            <enum name="last" value="2" />
+        </attr>
+        <attr name="itcast_toggle_ennable" format="boolean"/>
+    </declare-styleable>
+
+</resources>

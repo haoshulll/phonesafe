@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 逻辑与  focus 与 enabled同时满足 -->
+    <item android:state_focused="true"   android:state_enabled="true" android:drawable="@drawable/black_edit_focus"  ></item>
+   <!-- 逻辑或的操作  ： state_focused  与 android:state_enabled 只有一个为true 则可返还black_edit_focus图片  -->
+    <!--  <item android:state_enabled="true" android:drawable="@drawable/black_edit_focus"></item> -->
+    <item android:drawable="@drawable/black_edit_normal"></item>
+</selector>
